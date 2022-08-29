@@ -1,0 +1,80 @@
+{
+  "name": "cumulocity-demo-widget-plugin",
+  "version": "1.0.0",
+  "description": "It fetches Inventory data based on the device id and display the same in a widget",
+  "scripts": {
+    "start": "c8ycli server --env.beta=true",
+    "build": "c8ycli build",
+    "deploy": "c8ycli deploy",
+    "postinstall": "ngcc",
+    "prebuild": " gulp clean",
+    "postbuild": " gulp bundle"
+  },
+  "keywords": [],
+  "author": "Darpan Lalani - Software AG, Global Presales",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@angular/animations": "12.2.14",
+    "@angular/cdk": "12.2.13",
+    "@angular/common": "12.2.14",
+    "@angular/compiler": "12.2.14",
+    "@angular/core": "12.2.14",
+    "@angular/forms": "12.2.14",
+    "@angular/platform-browser": "12.2.14",
+    "@angular/platform-browser-dynamic": "12.2.14",
+    "@angular/router": "12.2.14",
+    "@angular/upgrade": "12.2.14",
+    "@c8y/client": "1014.0.116",
+    "@c8y/ngx-components": "1014.0.116",
+    "@ngx-translate/core": "13.0.0",
+    "rxjs": "~6.6.3",
+    "zone.js": "~0.11.4",
+    "@c8y/style": "1014.0.116"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "12.2.14",
+    "@angular/compiler-cli": "12.2.14",
+    "@angular/language-service": "12.2.14",
+    "@angular/service-worker": "12.2.14",
+    "@angular/localize": "12.2.14",
+    "@types/jest": "^27.0.3",
+    "@types/webpack": "^5.28.0",
+    "file-loader": "^6.2.0",
+    "jest": "^27.4.5",
+    "jest-preset-angular": "^11.0.1",
+    "typescript": "4.2.4",
+    "@c8y/cli": "1014.0.116",
+    "gulp": "^4.0.2",
+    "gulp-zip": "^5.0.1"
+  },
+  "c8y": {
+    "application": {
+      "name": "cumulocity-demo-widget-plugin",
+      "contextPath": "cumulocity-demo-widget-plugin",
+      "key": "cumulocity-demo-widget-plugin-application-key",
+      "globalTitle": "Cumulocity Demo Widget with Module Federation",
+      "tabsHorizontal": true,
+      "isPackage": true,
+      "noAppSwitcher": true,
+      "package": "plugin",
+      "requiredPlatformVersion": ">=1014.0.0",
+      "exports": [
+        {
+          "name": "Cumulocity Demo widget plugin",
+          "module": "GpDemoWidgetModule",
+          "path": "./widget/gp-demo-widget.module.ts",
+          "description": "Sample Demo Widget"
+        }
+      ],
+      "remotes": {
+        "widget-plugin": [
+          "GpDemoWidgetModule"
+        ]
+      }
+    },
+    "cli": {}
+  },
+  "browserslist": [
+    "last 2 major versions"
+  ]
+}
