@@ -2,11 +2,13 @@
 
 This Demo Widget is the Cumulocity module federation plugin created using c8ycli. This plugin can be used in Application Builder or Cockpit. It fetches Inventory data based on the device id and displays the same in a widget.
 
+### Please note that this plugin is in currently under BETA mode.
+
 ### Please choose Demo Widget release based on Cumulocity/Application builder version:
 
 |APPLICATION BUILDER | CUMULOCITY | DEMO WIDGET PLUGIN  |
 |--------------------|------------|---------------------|
-| 1.4.x              | >= 1014.x.x| 1.x.x               |
+| 1.4.x(coming Soon)| >= 1014.x.x| 1.x.x               |
 
 
 ## Prerequisites:
@@ -21,37 +23,40 @@ This Demo Widget is the Cumulocity module federation plugin created using c8ycli
 
 ### Local Development?
 
+**Requirements:**
+* Git
+* NodeJS (release builds are currently built with `v14.18.0`)
+* NPM (Included with NodeJS)
 
-   
-## Create Cumculocity Widget Plugin
-This is the Cumulocity module federation plugin. Plugins can be developed like any Cumulocity application, but can be used at runtime by other applications. Therefore, they export an Angular module which can then be imported by any other application. The exports are defined in `package.json`:
-
+**Instructions**
+1. Clone the repository: 
 ```
-"exports": [
-  {
-     "name": "Example widget plugin",
-     "module": "WidgetPluginModule",
-     "path": "./widget/widget-plugin.module.ts",
-     "description": "Adds custom widget"
-  }
-]
+git clone https://github.com/SoftwareAG/cumulocity-demo-widget-plugin.git
 ```
-
-**How to start**
-Run the command below to scaffold a `widget` plugin.
-
+2. Change directory: 
 ```
-c8ycli new <yourPluginName> widget-plugin
+cd cumulocity-demo-widget-plugin
 ```
-
-As the app.module is a typical Cumuloctiy application, any new plugin can be tested via the CLI:
-
+3. Install the dependencies: 
+```
+npm install
+```
+4. (Optional) Local development server: 
 ```
 npm start -- --shell cockpit
 ```
+5. Build the app: 
+```
+npm run build
+```
+6. Deploy the app: 
+```
+npm run deploy
+```
 
-In the Module Federation terminology, `widget` plugin is called `remote` and the `cokpit` is called `shell`. Modules provided by this `widget` will be loaded by the `cockpit` application at the runtime. This plugin provides a basic custom widget that can be accessed through the `Add widget` menu.
 
-> Note that the `--shell` flag creates a proxy to the cockpit application and provides` WidgetPluginModule` as an `remote` via URL options.
+------------------------------
 
-Also deploying needs no special handling and can be simply done via `npm run deploy`. As soon as the application has exports it will be uploaded as a plugin.
+These tools are provided as-is and without warranty or support. They do not constitute part of the Software AG product suite. Users are free to use, fork and modify them, subject to the license agreement. While Software AG welcomes contributions, we cannot guarantee to include every contribution in the master project.
+_____________________
+For more information you can Ask a Question in the [TECH Community Forums](https://tech.forums.softwareag.com/tag/Cumulocity-IoT).
