@@ -8,7 +8,7 @@ This Demo Widget is the Cumulocity module federation plugin created using c8ycli
 
 |APPLICATION BUILDER | CUMULOCITY | DEMO WIDGET PLUGIN  |
 |--------------------|------------|---------------------|
-| 1.4.x(coming soon)| >= 1014.x.x| 1.x.x               |
+| 1.4.x(coming soon)| >= 1015.x.x| 1.x.x               |
 
 
 ## Prerequisites:

@@ -1,6 +1,6 @@
 {
   "name": "cumulocity-demo-widget-plugin",
-  "version": "1.0.0-beta",
+  "version": "1.0.1-beta",
   "description": "It fetches Inventory data based on the device id and display the same in a widget",
   "scripts": {
     "start": "c8ycli server --env.beta=true",
@@ -24,12 +24,12 @@
     "@angular/platform-browser-dynamic": "12.2.14",
     "@angular/router": "12.2.14",
     "@angular/upgrade": "12.2.14",
-    "@c8y/client": "1014.0.116",
-    "@c8y/ngx-components": "1014.0.116",
+    "@c8y/client": "1015.0.109",
+    "@c8y/ngx-components": "1015.0.109",
     "@ngx-translate/core": "13.0.0",
     "rxjs": "~6.6.3",
     "zone.js": "~0.11.4",
-    "@c8y/style": "1014.0.116"
+    "@c8y/style": "1015.0.109"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "12.2.14",
@@ -43,7 +43,7 @@
     "jest": "^27.4.5",
     "jest-preset-angular": "^11.0.1",
     "typescript": "4.2.4",
-    "@c8y/cli": "1014.0.116",
+    "@c8y/cli": "1015.0.109",
     "gulp": "^4.0.2",
     "gulp-zip": "^5.0.1"
   },
