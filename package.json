@@ -49,9 +49,9 @@
   },
   "c8y": {
     "application": {
-      "name": "cumulocity-demo-widget-plugin",
-      "contextPath": "cumulocity-demo-widget-plugin",
-      "key": "cumulocity-demo-widget-plugin-application-key",
+      "name": "Demo Widget Plugin",
+      "contextPath": "demo-runtime-widget",
+      "key": "demo-runtime-widget-application-key",
       "globalTitle": "Cumulocity Demo Widget with Module Federation",
       "tabsHorizontal": true,
       "isPackage": true,
