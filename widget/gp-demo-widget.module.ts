@@ -38,7 +38,7 @@ providers: [
     provide:  HOOK_COMPONENTS,
     multi: true,
     useValue: {
-        id: 'demo.widget.plugin',
+        id: 'demo.widget',
         label: 'Demo Widget Plugin',
         description: 'Demo Widget',
         previewImage: preview.previewImage,
