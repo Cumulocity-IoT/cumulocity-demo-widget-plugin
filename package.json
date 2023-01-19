@@ -1,9 +1,9 @@
 {
   "name": "cumulocity-demo-widget-plugin",
-  "version": "1.0.2-beta",
-  "description": "It fetches Inventory data based on the device id and display the same in a widget",
+  "version": "1.0.3-beta",
+  "description": "It fetches Inventory data based on the device id and display the same in a widget.",
   "scripts": {
-    "start": "c8ycli server --env.beta=true",
+    "start": "c8ycli server",
     "build": "c8ycli build",
     "deploy": "c8ycli deploy",
     "postinstall": "ngcc",
@@ -52,20 +52,24 @@
   "c8y": {
     "application": {
       "name": "Demo Widget Plugin",
-      "contextPath": "demo-runtime-widget",
-      "key": "demo-runtime-widget-application-key",
-      "globalTitle": "Cumulocity Demo Widget with Module Federation",
+      "description": "It fetches Inventory data based on the device id and display the same in a widget.",
+      "contextPath": "c8y-pkg-demo-runtime-widget",
+      "key": "c8y-pkg-demo-runtime-widget-application-key",
+      "globalTitle": "It fetches Inventory data based on the device id and display the same in a widget.",
       "tabsHorizontal": true,
       "isPackage": true,
       "noAppSwitcher": true,
       "package": "plugin",
-      "requiredPlatformVersion": ">=1014.0.0",
+      "requiredPlatformVersion": ">=1016.0.0",
+      "icon": {
+        "class": "fa fa-diamond"
+      },
       "exports": [
         {
           "name": "Cumulocity Demo widget plugin",
           "module": "GpDemoWidgetModule",
           "path": "./widget/gp-demo-widget.module.ts",
-          "description": "Sample Demo Widget"
+          "description": "It fetches Inventory data based on the device id and display the same in a widget."
         }
       ],
       "remotes": {
