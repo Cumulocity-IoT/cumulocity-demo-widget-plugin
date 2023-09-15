@@ -37,7 +37,7 @@
     "@angular/language-service": "14.0.6",
     "@angular/localize": "14.0.6",
     "@angular/service-worker": "14.0.6",
-    "@c8y/cli": "1016.0.40",
+    "@c8y/cli": "1018.0.125",
     "@types/jest": "^28.1.6",
     "@types/webpack": "^5.28.0",
     "file-loader": "^6.2.0",
@@ -60,7 +60,7 @@
       "isPackage": true,
       "noAppSwitcher": true,
       "package": "plugin",
-      "requiredPlatformVersion": ">=1016.0.0",
+      "requiredPlatformVersion": ">=1018.0.0",
       "icon": {
         "class": "fa fa-diamond"
       },
