@@ -2,13 +2,11 @@
 
 This Demo Widget is the Cumulocity module federation plugin created using c8ycli. This plugin can be used in Application Builder or Cockpit. It fetches Inventory data based on the device id and displays the same in a widget.
 
-### Please note that this plugin is in currently under BETA mode.
-
 ### Please choose Demo Widget release based on Cumulocity/Application builder version:
 
 |APPLICATION BUILDER | CUMULOCITY | DEMO WIDGET PLUGIN  |
 |--------------------|------------|---------------------|
-| 2.0.x(coming soon)| >= 1018.x.x| 1.x.x               |
+| 2.0.x              | >= 1018.x.x| 1.x.x               |
 
 
 ## Prerequisites:
