@@ -17,7 +17,7 @@ This Demo Widget is the Cumulocity module federation plugin created using c8ycli
   
 ### Runtime Deployment?
 
-* This widget support runtime deployment. Download [Runtime Binary](https://github.com/SoftwareAG/cumulocity-demo-widget-plugin/releases/download/1.0.5/c8y-pkg-demo-runtime-widget-1.0.4.zip) and install via Administrations(Beta mode) --> Ecosystems --> Applications --> Packages 
+* This widget support runtime deployment. Download [Runtime Binary](https://github.com/SoftwareAG/cumulocity-demo-widget-plugin/releases/download/1.0.5/c8y-pkg-demo-runtime-widget-1.0.5.zip) and install via Administrations(Beta mode) --> Ecosystems --> Applications --> Packages 
 
 ### Local Development?
 
