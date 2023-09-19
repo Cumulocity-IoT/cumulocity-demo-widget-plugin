@@ -1,6 +1,6 @@
 {
   "name": "cumulocity-demo-widget-plugin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "It fetches Inventory data based on the device id and display the same in a widget.",
   "scripts": {
     "start": "c8ycli server",
