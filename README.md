@@ -1,14 +1,12 @@
-# Cumulocity Demo Widget Plugin [<img width="35" src="https://user-images.githubusercontent.com/67993842/97668428-f360cc80-1aa7-11eb-8801-da578bda4334.png"/>](https://github.com/SoftwareAG/cumulocity-demo-widget-plugin/releases/download/1.0.5/demo-runtime-widget-1.0.5.zip)
+# Cumulocity Demo Widget Plugin [<img width="35" src="https://user-images.githubusercontent.com/67993842/97668428-f360cc80-1aa7-11eb-8801-da578bda4334.png"/>](https://github.com/SoftwareAG/cumulocity-demo-widget-plugin/releases/download/1.0.5/c8y-pkg-demo-runtime-widget-1.0.5.zip)
 
 This Demo Widget is the Cumulocity module federation plugin created using c8ycli. This plugin can be used in Application Builder or Cockpit. It fetches Inventory data based on the device id and displays the same in a widget.
-
-### Please note that this plugin is in currently under BETA mode.
 
 ### Please choose Demo Widget release based on Cumulocity/Application builder version:
 
 |APPLICATION BUILDER | CUMULOCITY | DEMO WIDGET PLUGIN  |
 |--------------------|------------|---------------------|
-| 2.0.x(coming soon)| >= 1018.x.x| 1.x.x               |
+| 2.0.x              | >= 1018.x.x| 1.x.x               |
 
 
 ## Prerequisites:
@@ -19,7 +17,7 @@ This Demo Widget is the Cumulocity module federation plugin created using c8ycli
   
 ### Runtime Deployment?
 
-* This widget support runtime deployment. Download [Runtime Binary](https://github.com/SoftwareAG/cumulocity-demo-widget-plugin/releases/download/1.0.5/demo-runtime-widget-1.0.5.zip) and install via Administrations(Beta mode) --> Ecosystems --> Applications --> Packages 
+* This widget support runtime deployment. Download [Runtime Binary](https://github.com/SoftwareAG/cumulocity-demo-widget-plugin/releases/download/1.0.5/c8y-pkg-demo-runtime-widget-1.0.4.zip) and install via Administrations(Beta mode) --> Ecosystems --> Applications --> Packages 
 
 ### Local Development?
 
