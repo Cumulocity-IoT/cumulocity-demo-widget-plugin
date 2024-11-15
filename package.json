@@ -1,6 +1,6 @@
 {
   "name": "cumulocity-demo-widget-plugin",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "It fetches Inventory data based on the device id and display the same in a widget.",
   "scripts": {
     "start": "c8ycli server",
@@ -11,7 +11,7 @@
     "postbuild": " gulp bundle"
   },
   "keywords": [],
-  "author": "Darpan Lalani - Software AG, Global Presales",
+  "author": "Darpan Lalani",
   "license": "Apache-2.0",
   "dependencies": {
     "@angular/animations": "14.0.6",
